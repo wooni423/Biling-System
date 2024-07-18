@@ -60,7 +60,7 @@ dependencies {
     implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.0'
 
     // Spring Batch
-
+    implementation 'org.springframework.boot:spring-boot-starter-batch'
 }
 // Querydsl 설정부
 def generated = 'src/main/generated'

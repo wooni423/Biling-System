@@ -4,14 +4,22 @@ spring:
     activate:
       on-profile: dev
   datasource:
-    url: jdbc:mysql://billing-system-db.cn4qym2ei1m8.ap-northeast-2.rds.amazonaws.com:3306/biling_system_db
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    batch:
+      url: jdbc:mysql://localhost:3400/adjust_db
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+    streaming:
+      url: jdbc:mysql://localhost:3400/streaming_db
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+      driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     open-in-view: false
     properties:
       hibernate:
@@ -23,7 +31,17 @@ spring:
     database: mysql
     show-sql: true
 
+  batch:
+    job:
+      enabled: true # 서버 재시작 시 배치 자동 실행 방지
+    jdbc:
+      initialize-schema: always
+
+
 decorator:
   datasource:
     p6spy:
       enable-logging: true
+
+server:
+  port: 8081
