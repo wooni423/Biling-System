@@ -1,104 +1,114 @@
-# BYHAND
-![바이핸드](https://github.com/wjstjdus96/byhand/assets/77755620/50bc1609-2987-4cd5-b32d-22c5581c8965)
+# 스트리밍 서비스 정산 시스템
+<img src="https://raw.githubusercontent.com/wooni423/Biling-System/main/assets/statistic.jpg" alt="Statistics" width="700" height="300" />
 
-#### 프로젝트 소개
+## 📌 목차
+1. [프로젝트 개요]()
+2. [설치 및 실행]()
+3. [데이터 베이스 설계]()
+4.  [기술 스택]()
+5. [주요 기능]()
 
-핸드메이드 상품 거래가 가능한 커머스 플랫폼입니다. 
+##  프로젝트 개요
+본 프로젝트는 스트리밍 서비스에서 판매자를 위한 정산 페이지를 제공하기 위한 목적으로 개발되었습니다. 동영상 및 광고 관련 통계 및 정산과 관련된 비즈니스 로직을 처리하고 다중 서버 환경에서 성능을 보장하는 것을 목표로 하였습니다.
+
+### 프로젝트 진행기간
+
+2024.06 ~ 2024.07 (5주)
+
+### 프로젝트 배포링크
+https://billing-system.example/
 
 
-#### 프로젝트 진행기간
+## ⚙️ 설치 및 실행
 
-2024.04 ~ 2024.05 (4주)
+### 요구 사항
+- Docker
+- Docker Compose
+- JDK 17 
+- Gradle
 
-#### 프로젝트 배포링크
-[🌍 BYHAND 배포링크 🌍](https://byhand-wjstjdus96s-projects.vercel.app/)
+###  설치 방법
 
-
-##### 테스트 계정
-> 구매자   
-> ID: seller@test.com   
-> PW: 123qweQWE
->
-> 판매자   
-> ID: buyer@test.com   
-> PW: 123qweQWE
-<br/>
-
-## 📋 실행방법
-1. 레포지토리 복제 후 의존성 설치
-```
-$ git clone https://github.com/wjstjdus96/byhand.git
-$ cd byhand
-$ npm install
-```
-2. 개발 서버 가동
-```
-$ npm run dev
-```
-3. 브라우저에서 실행
-```
-http://localhost:5173/
-```
-
+1.  **레포지토리 복제**
+	```bash
+	$ git clone https://github.com/wooni423/Biling-System.git
+	$ cd Billing-System
+	```
+2. **Docker 환경 설정**
+	```bash
+	$ docker-compose up -d
+	```
+3.  **프로젝트 빌드 및 실행**
+	```bash
+	$./gradlew build
+	$./gradlew bootrun
+	```
+##  기술스택
 
 
 ## 🛠 기술스택
 
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white"> <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"> <img src="https://img.shields.io/badge/Tailwindcss-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=Java&logoColor=white"> <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white"> <img src="https://img.shields.io/badge/Spring Data JPA-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"> <img src="https://img.shields.io/badge/Spring MVC-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"> <img src="https://img.shields.io/badge/Spring%20Batch-6DB33F?style=for-the-badge&logo=spring&logoColor=white">
+  <img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=Gradle&logoColor=white"> <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON Web Tokens&logoColor=white">
 
-<img src="https://img.shields.io/badge/Zustand-1E4CC9?style=for-the-badge&logo=React&logoColor=white"> <img src="https://img.shields.io/badge/React Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white"> <img src="https://img.shields.io/badge/React Hook Form-EC5990?style=for-the-badge&logo=reacthookform&logoColor=white">
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white">
 
-<img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white">
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white">
+<img src="https://img.shields.io/badge/GitHub Actions-2088FF?style=for-the-badge&logo=GitHub Actions&logoColor=white">
 
-<img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white"> <img src="https://img.shields.io/badge/Testing Library-E33332?style=for-the-badge&logo=testinglibrary&logoColor=white"> 
-
-<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=netlify&logoColor=white">
-
-<br/>
+<img src="https://img.shields.io/badge/Git-181717?style=for-the-badge&logo=guthub&logoColor=white"> <img src="https://img.shields.io/badge/AWS%20EC2-569A31?style=for-the-badge&logo=guthub&logoColor=white">
 
 ## 📌 주요기능
-##### 토글을 열면 시연영상을 확인하실 수 있습니다
-#### <details><summary>로그인 / 회원가입</summary> <br/> <p>로그인</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/f12d75ce-d43a-4d36-9179-8dcee4e89a9f" width="600" /> <br/> <br/> <p>회원가입</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/6f1fd225-d95f-4ba6-9c1a-2fffdd57cdae" width="600" /> <br/></details>
-- 폼 유효성 검증
-- 로그인 후 전역상태로 회원정보 관리
-#### <details><summary>전체 상품 조회</summary> <br/> <p>전체상품 - 결과 필터링</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/e9c5366a-fcf0-4115-b274-e91dd7707802" width="600" /> <br/> <br/> <p>전체상품 - 무한스크롤</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/a6697ac9-49fc-4461-96aa-1cb8d1b92e12" width="600" /> <br/></details>
-- 카테고리, 검색어, 정렬옵션에 따른 조회 결과 필터링 기능
-- 무한스크롤을 활용한 페이지네이션
-#### <details><summary>상품 상세 조회</summary><br/> <p>상품 상세정보</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/4e13159e-d267-43e9-b28e-f9bad1d0ddb4" width="600" /><br/></details>
-- 상품 수량 선택 -> 장바구니 추가 혹은 상품 주문
-- 이미지 캐러셀을 통한 다량의 상품 이미지 자동 전환
-#### <details><summary>[구매자] 장바구니</summary><br/> <p>장바구니 - 상품선택,수량변경</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/ab88a2c2-2a66-4d6b-89e1-00f239aa64b5" width="600" /> <br/> <br/> <p>장바구니 - 부분삭제,부분결제</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/7b7b9161-5ca3-4717-be6d-74492e897a8f" width="600" /></details>
-- 장바구니 상품 수량 수정 기능
-- 선택한 상품 금액 및 개수 계산
-- 상품 전체/부분선택 -> 부분적인 주문 및 삭제 기능
+### 회원 서비스
+- **회원 가입**
+	- 소설 로그인을 통해 회원 가입 기능을 제공합니다. 
+- **로그인 및 로그아웃**
+	- 소설 로그인을 통해 회원 가입 기능을 제공합니다. 
+- **권한 관리**
+	- 사용자 계정과 판매자 계정의  권한을 구분하여 관리합니다.
 
-#### <details><summary>[구매자] 선택 상품 주문</summary> <br/> <p>주문-배송정보입력</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/4f5b4468-0edc-4aae-8dc1-20e5a2d4b015" width="600" />  <br/> <br/> <p>주문-결제</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/50c1c1e2-74ce-4a49-aafa-3ded7825be24" width="600" /></details>
-- 카카오 우편번호 api를 활용한 배송 정보 입력 기능
-- 포트원 SDK를 활용한 결제 기능
-#### <details><summary>[구매자] 주문 내역 조회 및 주문 취소</summary><br/> <p>주문 정보 조회 및 주문 취소</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/953a3f66-18f7-4dd8-8aa1-da815ccf1fab" width="600" /></details>
-- 날짜별 주문 내역 조회 기능
-- 상품별 주문 취소 기능
-#### <details><summary>[판매자] 판매상품관리</summary> <br/> <p>판매상품관리 - 상품 등록,수정</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/42e80267-58e8-494c-8e95-9d58e6035ad9" width="600" />  <br/> <br/> <p>판매상품관리 - 상품 삭제</p> <img src="https://github.com/wjstjdus96/byhand/assets/77755620/c2b12fdf-3fd1-43a6-89b0-67059eff7fa3" width="600" /></details>
-- 판매 상품 조회, 등록, 수정, 삭제 기능
-- 등록 시 상품 이미지 개수 5개 제한
+### 스트리밍 서비스
+- **동영상 재생**
+	- 등록된 동영상을 재생하며, 조회수와 재생 시간을 기록합니다. 
+- **광고 시청**
+	- 동영상에 등록된 광고를 시청하며, 광고 시청 횟수를 기록합니다. 
 
+###  동영상 관리
+- **동영상 등록**
+	- 동영상을 등록하고 관리할 수 있습니다. 
+- **광고 등록**
+	- 동영상에 등록된 광고를 시청하며, 5분마다 광고가 자동으로 추가됩니다. 
 
-<br/>
+###  통계 및 정산
+- **조회수 통계**
+	- 1일, 1주일, 1달 동안 조회수가 높은 동영상 TOP5를 제공합니다.
+- **재생 시간 통계**
+	- 1일, 1주일, 1달 동안 조회수가 높은 동영상 TOP5를 제공합니다.
+- **정산 데이터 생성**
+	- 동영상 및 광고 조회수를 기반으로 정산 금액을 계산하고 저장합니다.
+- **정산 데이터 조회**
+	- 1일, 1주일 ,1달 동안 총 정산금액, 영상별 정산금액, 광고별 정산금액을 조회할 수 있습니다.
+
+###  어뷰징 방지
+
+- **조회수 조작 방지**
+	- 동영상 게시자가 자신의 영상을 시청하는 경우 조회수와 광고 시청 횟수를 카운트하지 않습니다.
+- **중복 시청 방지**
+	- 30초 이내에 동일한 IP 또는 인증키로부터의 접속을 어뷰징으로 간주하여 조회수와 시청 횟수를 카운트하지 않습니다.
+
 
 ## 🔥 성능 최적화
-- [렌더링과 로딩최적화로 퍼포먼스 점수 30% 개선](https://comprogramming.tistory.com/118)   
-  - LCP 3s -> 1s / TBT 190ms -> 0ms
+- [Spring Batch 멀티 쓰레드 적용으로 배치 속도 개선]()   
+  - 성능 개선 수치 및 관련 이미지 추후 추가
 
 - [이미지 최적화로 이미지 크기 75% 축소](https://comprogramming.tistory.com/122)
 - [SEO 점수 22% 개선](https://comprogramming.tistory.com/119)
 <br/>  
 
 ## 🔫 트러블 슈팅
-- [Grid 아이템 이미지 로딩 후 리플로우 이슈 해결](https://comprogramming.tistory.com/116)
+- [Grid 아이템 이미지 로딩 후 리플로우 이슈 해결]()
   
-- [상세 상품 prefetch로 인한 불필요한 네트워크 요청 해결](https://comprogramming.tistory.com/120)
-
-<br/>  
+- [상세 상품 prefetch로 인한 불필요한 네트워크 요청 해결]()
 
 ## 💭 기술적 의사결정
 
@@ -106,28 +116,24 @@ http://localhost:5173/
 
 - [컴파운트 컴포넌트를 활용한 공통 컴포넌트 재사용성과 가독성 향상](https://comprogramming.tistory.com/117)
 
-<br/>
 
 ## 🏗 아키텍쳐
-![바이핸드아키테쳐](https://github.com/wjstjdus96/byhand/assets/77755620/fa74af48-df72-4b3c-9fb8-6699ba9c5972)
-<br/>
 
-## 🗂 폴더구조
 
+
+## 🗂 프로젝트 구조
 ```
 ┣ 📁__mocks__
 ┣ 📁__test__
 ┣ 📁public
 ┣ 📁src
-  ┣ 📁api
-  ┣ 📁assets
-  ┣ 📁components
-      ┣ 📁admin
-      ┣ 📁auth
-      ┣ 📁cart
-      ┣ 📁common
-      ┣ 📁home
-      ┣ 📁myPage
+  ┣ 📁main
+      ┣ 📁com
+	      ┣ 📁jiwoong
+		      ┣ 📁billingsystem
+			      ┣ 📁adjustment
+			      ┣ 📁global
+			      ┣ 📁streaming
       ┣ 📁payment
       ┣ 📁productDetail
       ┣ 📁products
